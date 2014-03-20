@@ -38,6 +38,10 @@ mod "ceilometer",
   :git => "git://github.com/stackforge/puppet-ceilometer",
   :ref => "stable/havana"
 
+mod "horizon",
+  :git => "git://github.com/stackforge/puppet-horizon",
+  :ref => "stable/havana"
+
 mod "tempest",
   :git => "git://github.com/stackforge/puppet-tempest",
   :ref => "stable/havana"
@@ -96,3 +100,30 @@ mod "sysctl",
 mod "rabbitmq",
   :git => "git://github.com/puppetlabs/puppetlabs-rabbitmq",
   :ref => "2.x"
+
+# indirect dependencies
+
+mod "firewall",
+  :git => "git://github.com/puppetlabs/puppetlabs-firewall",
+  :ref => "1.0.x"
+
+mod "apt",
+  :git => "git://github.com/puppetlabs/puppetlabs-apt",
+  :ref => "1.4.x"
+
+mod "mongodb",
+  :git => "git://github.com/puppetlabs/puppetlabs-mongodb",
+  :ref => "0.7.0"
+
+mod "ntp",
+  :git => "git://github.com/puppetlabs/puppetlabs-ntp",
+  :ref => "3.0.x"
+
+mod "postgresql",
+  :git => "git://github.com/puppetlabs/puppetlabs-postgresql",
+  :ref => "3.3.x"
+
+mod "puppetdb",
+  :git => "git://github.com/puppetlabs/puppet-puppetdb",
+  :ref => "1.5.x"
+
