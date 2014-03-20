@@ -80,11 +80,11 @@ mod "concat",
 
 mod "memcached",
   :git => "git://github.com/saz/puppet-memcached",
-  :ref => "2.4.0"
+  :ref => "658374848a6d2cf07f0bf714bc34709e9d0ee109"
 
 mod "ssh",
   :git => "git://github.com/saz/puppet-ssh",
-  :ref => "1.4.0"
+  :ref => "a0f5d5da20c91775c76c77d3b57b41f4245a260a"
 
 mod "qpid",
   :git => "git://github.com/dprince/puppet-qpid",
