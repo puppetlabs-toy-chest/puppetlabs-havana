@@ -5,8 +5,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  #config.vm.box = "vagrant-scientific64-x64"
-  config.vm.box = "sl6464"
+  config.vm.box = "centos-64-x64-fusion503"
+  config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-fusion503.box"
 
   config.hostmanager.enabled = true
   config.hostmanager.manage_host = false
