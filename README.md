@@ -1,8 +1,13 @@
-This module is used to deploy a multi-node installation of OpenStack Havana.
 
 #puppetlabs-havana
 
+This module is used to deploy a multi-node or all-in-one installation of OpenStack Havana.
+All future development of this module is taking place in the 
+[puppetlabs-openstack](https://github.com/puppetlabs/puppetlabs-openstack) repository.
+Please submit all pull requests and issues there.
+
 ####Table of Contents
+
 
 1. [Overview - What is the Havana module?](#overview)
 2. [Module Description - What does the module do?](#module-description)
@@ -66,13 +71,14 @@ and the specific ip addresses of the controller node and the storage node.
 
 ##Usage
 
+The first step to using the puppetlabs-havana module is to configure hiera with settings specific to
+your installation. In this module, the example directory contains a sample common.yaml file with all
+of the settings required by this module, as well as a example user to test your deployment with.
+These configuration options include network settings, locations of specific nodes, and passwords for
+Keystone and databases. If any of these settings are undefined or not properly set, your deployment
+may fail.
+
 ###Hiera Configuration
-The first step to using the puppetlabs-havana module is to configure hiera with settings specific
-to your installation. In this module, the example directory contains a sample common.yaml file
-with all of the settings required by this module, as well as a example user to test your deployment
-with. These configuration options include network settings, locations of specific nodes, and
-passwords for Keystone and databases. If any of these settings are undefined or not properly set, your
-deployment may fail.
 
 ###Controller Node
 For your controller node, you need to assign your node the controller role. For example:
